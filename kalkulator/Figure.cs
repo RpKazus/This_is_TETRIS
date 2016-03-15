@@ -51,11 +51,12 @@ namespace WindowsFormsApplication1
         {
             get
             {
-                /*foreach (Point np in result)
+                Point result = location;
+                foreach (Point pp in FillPoints)
                 {
-                   
-                }*/
-                Point result = new Point(location.X,location.Y + r);
+                    if (result.X > pp.X)
+                        result = pp;
+                }
                 return result;
             }
         }

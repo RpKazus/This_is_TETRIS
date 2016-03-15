@@ -13,6 +13,7 @@ namespace WindowsFormsApplication1
     {
         public void Randomize()
         {
+            
             Random rnd = new Random();
             System.Threading.Thread.Sleep(10);
             switch (rnd.Next(0,6))
@@ -38,6 +39,8 @@ namespace WindowsFormsApplication1
             }
             figure.location = new Point((rnd.Next(1,17) * r), figure.location.Y);
         }
+        bool Apressed = false;
+        bool Dpressed = false;
         int Score = 0;
         Figure figure = new Line();
         int defaultLoc = 0;
@@ -83,13 +86,19 @@ namespace WindowsFormsApplication1
             int figurot = figure.rotation;
             figure.Rotate();
             foreach(Point pp in figure.FillPoints)
+                if(pp.X >= 0 && pp.Y < panel1.Height && pp.X <= panel1.Width)
                 foreach(Point po in Fallist)
                 {
-                    if (po.Equals(pp) || pp.X < 0 || pp.Y >= panel1.Height || pp.X >= panel1.Width)
+                    if (po.Equals(pp))
                     {
                         figure.rotation = figurot;
                         return false;
                     }
+                }
+                else
+                {
+                    figure.rotation = figurot;
+                    return false;
                 }
             figure.rotation = figurot;
             return true;
@@ -177,14 +186,12 @@ namespace WindowsFormsApplication1
             switch (e.KeyCode)
             {
                 case Keys.A:
-                    if (CanLeft())
-                    figure.location = new Point(figure.location.X - r, figure.location.Y);
-                    panel1.Invalidate();
+                    Apressed = true;
+                    System.Threading.Thread.Sleep(50);
                     break;
                 case Keys.D:
-                    if (CanRight())
-                    figure.location = new Point(figure.location.X + r, figure.location.Y);
-                    panel1.Invalidate();
+                    Dpressed = true;
+                    System.Threading.Thread.Sleep(50);
                     break;
                 case Keys.S:
                     while(CanFall())
@@ -201,6 +208,26 @@ namespace WindowsFormsApplication1
         private void Form1_Load(object sender, EventArgs e)
         {
             Randomize();
+        }
+
+        private void Motion_Tick(object sender, EventArgs e)
+        {
+            if(Apressed & CanLeft()) figure.location = new Point(figure.location.X - r, figure.location.Y);
+            if (Dpressed & CanRight()) figure.location = new Point(figure.location.X + r, figure.location.Y);
+            panel1.Invalidate();
+        }
+
+        private void Form1_KeyUp(object sender, KeyEventArgs e)
+        {
+            switch (e.KeyCode)
+            {
+                case Keys.A:
+                    Apressed = false;
+                    break;
+                case Keys.D:
+                    Dpressed = false;
+                    break;
+            }
         }
     }
 }

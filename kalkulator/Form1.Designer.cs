@@ -32,6 +32,7 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.PictureBox();
             this.ScoreList = new System.Windows.Forms.Label();
+            this.Motion = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.panel1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,6 +63,12 @@
             this.ScoreList.TabIndex = 1;
             this.ScoreList.Text = "         ";
             // 
+            // Motion
+            // 
+            this.Motion.Enabled = true;
+            this.Motion.Interval = 50;
+            this.Motion.Tick += new System.EventHandler(this.Motion_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -74,6 +81,7 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
             ((System.ComponentModel.ISupportInitialize)(this.panel1)).EndInit();
             this.ResumeLayout(false);
 
@@ -84,6 +92,7 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.PictureBox panel1;
         private System.Windows.Forms.Label ScoreList;
+        private System.Windows.Forms.Timer Motion;
     }
 }
 

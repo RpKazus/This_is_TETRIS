@@ -38,3 +38,5 @@ C:\Users\Казус\Desktop\Проги\Tetris-master\kalkulator\obj\x86\Debug\ka
 C:\Users\Казус\Desktop\Проги\Tetris-master\kalkulator\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
 C:\Users\Казус\Desktop\Проги\Tetris-master\kalkulator\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
 C:\Users\Казус\Desktop\Проги\Tetris-master\kalkulator\obj\x86\Debug\kalkulator.csproj.GenerateResource.Cache
+C:\Users\Казус\Desktop\Проги\Tetris\kalkulator\obj\x86\Debug\kalkulator.exe
+C:\Users\Казус\Desktop\Проги\Tetris\kalkulator\obj\x86\Debug\kalkulator.pdb
