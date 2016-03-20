@@ -62,6 +62,7 @@
     <Compile Include="Square.cs" />
     <Compile Include="S_Left.cs" />
     <Compile Include="S_Right.cs" />
+    <Compile Include="T_Line.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

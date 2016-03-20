@@ -40,3 +40,11 @@ C:\Users\Казус\Desktop\Проги\Tetris-master\kalkulator\obj\x86\Debug\Wi
 C:\Users\Казус\Desktop\Проги\Tetris-master\kalkulator\obj\x86\Debug\kalkulator.csproj.GenerateResource.Cache
 C:\Users\Казус\Desktop\Проги\Tetris\kalkulator\obj\x86\Debug\kalkulator.exe
 C:\Users\Казус\Desktop\Проги\Tetris\kalkulator\obj\x86\Debug\kalkulator.pdb
+C:\Users\KKondrashov\Desktop\This_is_TETRIS\kalkulator\obj\x86\Debug\kalkulator.exe
+C:\Users\KKondrashov\Desktop\This_is_TETRIS\kalkulator\obj\x86\Debug\kalkulator.pdb
+C:\Users\KKondrashov\Desktop\This_is_TETRIS\kalkulator\bin\Debug\kalkulator.exe
+C:\Users\KKondrashov\Desktop\This_is_TETRIS\kalkulator\bin\Debug\kalkulator.pdb
+C:\Users\KKondrashov\Desktop\This_is_TETRIS\kalkulator\obj\x86\Debug\kalkulator.csprojResolveAssemblyReference.cache
+C:\Users\KKondrashov\Desktop\This_is_TETRIS\kalkulator\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\KKondrashov\Desktop\This_is_TETRIS\kalkulator\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\KKondrashov\Desktop\This_is_TETRIS\kalkulator\obj\x86\Debug\kalkulator.csproj.GenerateResource.Cache

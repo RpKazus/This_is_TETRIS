@@ -16,7 +16,7 @@ namespace WindowsFormsApplication1
             
             Random rnd = new Random();
             System.Threading.Thread.Sleep(10);
-            switch (rnd.Next(0,6))
+            switch (rnd.Next(0,0))
             {
                 case 0:
                     figure = new Square();
@@ -35,6 +35,9 @@ namespace WindowsFormsApplication1
                     break;
                 case 5:
                     figure = new S_Left();
+                    break;
+                case 6:
+                    figure = new T_Line();
                     break;
             }
             figure.location = new Point((rnd.Next(1,17) * r), figure.location.Y);
@@ -187,11 +190,9 @@ namespace WindowsFormsApplication1
             {
                 case Keys.A:
                     Apressed = true;
-                    System.Threading.Thread.Sleep(50);
                     break;
                 case Keys.D:
                     Dpressed = true;
-                    System.Threading.Thread.Sleep(50);
                     break;
                 case Keys.S:
                     while(CanFall())
@@ -227,6 +228,22 @@ namespace WindowsFormsApplication1
                 case Keys.D:
                     Dpressed = false;
                     break;
+            }
+        }
+
+        private void button1_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (button1.Text == "СТОП")
+            {
+                button1.Text = "ПУСК";
+                timer1.Stop();
+                Motion.Stop();
+            }
+            else
+            {
+                button1.Text = "СТОП";
+                timer1.Start();
+                Motion.Start();
             }
         }
     }

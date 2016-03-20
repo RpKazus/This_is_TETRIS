@@ -33,6 +33,7 @@
             this.panel1 = new System.Windows.Forms.PictureBox();
             this.ScoreList = new System.Windows.Forms.Label();
             this.Motion = new System.Windows.Forms.Timer(this.components);
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.panel1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,14 +67,33 @@
             // Motion
             // 
             this.Motion.Enabled = true;
-            this.Motion.Interval = 50;
+            this.Motion.Interval = 70;
             this.Motion.Tick += new System.EventHandler(this.Motion_Tick);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Yellow;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button1.FlatAppearance.BorderSize = 2;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Khaki;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gold;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F);
+            this.button1.ForeColor = System.Drawing.Color.Red;
+            this.button1.Location = new System.Drawing.Point(388, 124);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(240, 52);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "СТОП";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.button1_MouseClick);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(640, 550);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.ScoreList);
             this.Controls.Add(this.panel1);
             this.KeyPreview = true;
@@ -93,6 +113,7 @@
         private System.Windows.Forms.PictureBox panel1;
         private System.Windows.Forms.Label ScoreList;
         private System.Windows.Forms.Timer Motion;
+        private System.Windows.Forms.Button button1;
     }
 }
 

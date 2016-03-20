@@ -5,3 +5,10 @@ C:\Users\KKondrashov\Desktop\tetris\kalkulator\obj\x86\Release\WindowsFormsAppli
 C:\Users\KKondrashov\Desktop\tetris\kalkulator\obj\x86\Release\kalkulator.csproj.GenerateResource.Cache
 C:\Users\KKondrashov\Desktop\tetris\kalkulator\obj\x86\Release\kalkulator.exe
 C:\Users\KKondrashov\Desktop\tetris\kalkulator\obj\x86\Release\kalkulator.pdb
+C:\Users\KKondrashov\Desktop\This_is_TETRIS\kalkulator\bin\Release\kalkulator.exe
+C:\Users\KKondrashov\Desktop\This_is_TETRIS\kalkulator\bin\Release\kalkulator.pdb
+C:\Users\KKondrashov\Desktop\This_is_TETRIS\kalkulator\obj\x86\Release\WindowsFormsApplication1.Form1.resources
+C:\Users\KKondrashov\Desktop\This_is_TETRIS\kalkulator\obj\x86\Release\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\KKondrashov\Desktop\This_is_TETRIS\kalkulator\obj\x86\Release\kalkulator.csproj.GenerateResource.Cache
+C:\Users\KKondrashov\Desktop\This_is_TETRIS\kalkulator\obj\x86\Release\kalkulator.exe
+C:\Users\KKondrashov\Desktop\This_is_TETRIS\kalkulator\obj\x86\Release\kalkulator.pdb
